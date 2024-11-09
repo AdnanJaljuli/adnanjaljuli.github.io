@@ -22,12 +22,13 @@
                     <h1>Adnan Jaljuli</h1>
                 </div>
                 <h2>Parallel Vertex Cover Algorithms on GPUs</h2>
-                In this work, we propose an approach to traverse the vertex cover search tree in parallel using GPUs while handling dynamic load balancing. Each thread block traverses a different sub-tree using a local stack, however, we use a global worklist to balance
-                the load to ensure that all blocks remain busy. Blocks contribute branches of their sub-trees to the global worklist on an as-needed basis, while blocks that finish their subtrees pick up new ones from the global worklist. We use degree
-                arrays to represent intermediate graphs so that the representation is compact in memory to avoid limiting parallelism, but selfcontained which is necessary for the load balancing process.
+                In this work, we presented techniques for parallelizing exact algorithms for Minimum Vertex Cover and Parameterized Vertex Cover on GPUs. We proposed a hybrid approach for work distribution and dynamic load balancing where each thread block uses a local stack to traverse a sub-tree, but contributes branches of its sub-tree to a global worklist on an as-needed basis, extracting just enough parallelism for load balancing without incurring too much overhead.
+                We implemented CUDA kernels for solving both MVC and PVC using our proposed approach, and show that they achieve substantial performance and load balance improvements, especially on difficult instances of the problem and on graphs with high average degree.
+                <a href="https://arxiv.org/pdf/2204.10402.pdf">[paper]</a> <a href="publications/slides/slides-vc-ipdps22.pptx">[slides]</a> <a href="https://www.youtube.com/watch?v=M7RLXhlW-uA">[video]</a> <a href="https://github.com/pky00/Parallel-Vertex-Cover-Algorithms-on-GPUs">[code]</a>
                 <h2>Hierarchical Matrix Multiplication on GPUs</h2>
                 <h2>Langa</h2>
-                Built and developed a web application that offers automatic speech recognition services through API. [Link to the project](https://langa.ai) [API Docs](https://documenter.getpostman.com/view/31580435/2s9YeLZVPx)
+                Built and developed a web application that offers asynchronous automatic speech recognition services through API.
+                <a href="https://langa.ai">[Site]</a> <a href="https://documenter.getpostman.com/view/31580435/2s9YeLZVPx">[API Docs]</a>
             </td>
         </tr>
     </table>
