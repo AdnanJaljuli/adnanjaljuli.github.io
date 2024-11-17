@@ -14,8 +14,8 @@
             <td id="layout-menu">
                 <div class="menu-item"><a href="index.html">Home</a></div>
                 <div class="menu-item"><a href="projects.html" class="current">Projects</a></div>
-                <div class="menu-item"><a href="references.html">References</a></div>
-                <div class="menu-item"><a href="PDFS/JaljuliResumeJune2024.pdf">Resume</a></div>
+                <!-- <div class="menu-item"><a href="references.html">References</a></div> -->
+                <!-- <div class="menu-item"><a href="PDFS/JaljuliResumeJune2024.pdf">Resume</a></div> -->
             </td>
             <td id="layout-content">
                 <div id="toptitle">
@@ -23,11 +23,13 @@
                 </div>
                 <h2>Parallel Vertex Cover Algorithms on GPUs</h2>
                 <a href="Figures/mvc_graph.jpeg"><img src="Figures/mvc_graph.jpeg" alt="alt text" height="340px" /></a>&nbsp;
-                <a href="Figures/mvc_worklist.jpeg"><img src="Figures/mvc_worklist.jpeg" alt="alt text" height="340px" /></a>&nbsp; <br/> <br/>
-                In this work, we presented techniques for parallelizing exact algorithms for Minimum Vertex Cover and Parameterized Vertex Cover on GPUs. We proposed a hybrid approach for work distribution and dynamic load balancing where each thread block uses a local stack to traverse a sub-tree, but contributes branches of its sub-tree to a global worklist on an as-needed basis, extracting just enough parallelism for load balancing without incurring too much overhead.
-                We implemented CUDA kernels for solving both MVC and PVC using our proposed approach, and show that they achieve substantial performance and load balance improvements, especially on difficult instances of the problem and on graphs with high average degree. <br/>
+                <a href="Figures/mvc_worklist.jpeg"><img src="Figures/mvc_worklist.jpeg" alt="alt text" height="340px" /></a>&nbsp; <br/> <br/> I worked as part of my final year project at AUB on building an efficient In this work, we presented techniques for parallelizing exact algorithms
+                for Minimum Vertex Cover and Parameterized Vertex Cover on GPUs. We proposed a hybrid approach for work distribution and dynamic load balancing where each thread block uses a local stack to traverse a sub-tree, but contributes branches
+                of its sub-tree to a global worklist on an as-needed basis, extracting just enough parallelism for load balancing without incurring too much overhead. We implemented CUDA kernels for solving both MVC and PVC using our proposed approach,
+                and show that they achieve substantial performance and load balance improvements, especially on difficult instances of the problem and on graphs with high average degree. <br/>
                 <a href="https://arxiv.org/pdf/2204.10402.pdf">[paper]</a> <a href="publications/slides/slides-vc-ipdps22.pptx">[slides]</a> <a href="https://www.youtube.com/watch?v=M7RLXhlW-uA">[video]</a> <a href="https://github.com/pky00/Parallel-Vertex-Cover-Algorithms-on-GPUs">[code]</a>
                 <h2>Hierarchical Matrix Multiplication on GPUs</h2>
+                Conducted a research project that aims at building bottom-up hierarchical matrices and accelerating hierarchical matrix-matrix multiplication on GPUs using CUDA. <br/> [TODO: Add more project details]
                 <h2>Langa</h2>
                 Built and developed a web application that offers asynchronous automatic speech recognition services through API. <br/>
                 <a href="https://langa.ai">[Site]</a> <a href="https://documenter.getpostman.com/view/31580435/2s9YeLZVPx">[API Docs]</a>
